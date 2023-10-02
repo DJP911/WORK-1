@@ -1,0 +1,66 @@
+<h3>Hello </h3>
+
+<ul>
+  
+  <li><a routerLink="/option" routerLinkActive="active" ariaCurrentWhenActive="page" >Option0</a></li>
+  <li><a routerLink="/option1" routerLinkActive="active" ariaCurrentWhenActive="page" >Option1</a></li>
+
+</ul>
+
+<router-outlet></router-outlet>
+
+<button (click)="updateUser()">Update</button>
+
+<span> ngonchanges Button</span>
+
+<br/><br/>
+
+
+ <!-- <app-option [userName]="userName"> -->
+  <!-- <div>ngAfterContentInit -- Parent</div> -->
+ <!-- </app-option>  -->
+<!-- <app-option1 [userName]="userName"></app-option1>  -->
+
+
+
+
+
+
+
+
+<button (click)="bind()">Binding ?</button>    
+<app-binding *ngIf="isBind"></app-binding>
+
+
+
+
+
+
+
+
+<h2>Lazy Loading Concept</h2>
+<h2>Admin Links</h2>
+<ul>
+  <li><a routerLink="admin/login">Admin Login</a></li>
+  <li><a routerLink="admin/list">Admin List</a></li>
+</ul>
+
+
+
+
+<h3>Table View</h3>
+    <button (click)="tableshow()">Table ?</button>
+    <app-tableview *ngIf="istable"></app-tableview>
+    
+    
+    <!-- <br><br><br>
+    
+      <button (click)="destroy()">Destroy Child</button>
+      <br>
+      <br>
+      <app-option *ngIf="!isChildDestroyed" [userName]="userName"><div #contentWrapper></div></app-option>
+       <app-option1 *ngIf="!isChildDestroyed" [userName]="userName"><div #contentWrapper>xyz</div></app-option1> -->
+      <!-- <div *ngIf="isChildDestroyed">Child Component is destroyed</div> -->
+    
+    
+        <!-- <br><br><br> --> 
